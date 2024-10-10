@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 94%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo img {
+  width: 150px;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Intro Section */
+.intro {
+  padding: 60px 0;
+}
+
+.intro h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 30px 0;
+}
+
+.intro button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.intro button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Projects Section */
+.projects {
+  padding: 50px 0;
+  background-color: #ebf2f2;
+}
+
+.projects .project-card {
+  text-align: center;
+  padding: 30px;
+  background-color: #f8f8f8;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.projects .project-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.projects .project-card p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Grid Layout */
+.projects .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projects .project-card {
+  flex-basis: 45%;
+  margin-bottom: 20px;
+}
