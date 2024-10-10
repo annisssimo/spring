@@ -1,25 +1,47 @@
+@font-face {
+  font-family: 'Metropolis';
+  src: url('/fonts/Metropolis-SemiBold.woff2') format('woff2'),
+    url('/fonts/Metropolis-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('/fonts/Metropolis-Bold.woff2') format('woff2'),
+    url('/fonts/Metropolis-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  line-height: 1.6;
+  font-family: Open Sans, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .container {
-  width: 94%;
+  width: 94.5%;
   max-width: 1400px;
   margin: 0 auto;
 }
 
 /* Header Styles */
 header {
-  background-color: #f8f8f8;
-  padding: 20px 0;
+  padding: 14px 0;
+  border-bottom: 1px solid #ebf2f2;
+  min-height: 3.25rem;
 }
 
 header .container {
@@ -28,8 +50,12 @@ header .container {
   justify-content: space-between;
 }
 
-header .logo img {
-  width: 150px;
+header .logo {
+  width: 300px;
+}
+
+.logo path {
+  fill: #6db33f;
 }
 
 header nav ul {
@@ -38,13 +64,39 @@ header nav ul {
 }
 
 header nav ul li {
-  margin: 0 15px;
+  margin: 0 18px;
+  font-family: Metropolis, sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+header nav ul li:after {
+  display: inline-block;
+  content: ' ';
+  transform: rotate(-45deg);
+  border-bottom: 2px solid #111;
+  border-left: 2px solid #111;
+  border-radius: 1px;
+  height: 6px;
+  width: 6px;
+  position: relative;
+  bottom: 3px;
+  left: 8px;
 }
 
 header nav ul li a {
   text-decoration: none;
-  color: #333;
-  font-weight: bold;
+  color: #111;
+}
+
+header .right-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+header .toggle {
+  width: 38px;
 }
 
 /* Intro Section */
