@@ -1,15 +1,47 @@
 @font-face {
   font-family: 'Metropolis';
-  src: url('/fonts/Metropolis-SemiBold.woff2') format('woff2'),
-    url('/fonts/Metropolis-SemiBold.woff') format('woff');
+  src: url('/fonts/Metropolis/Metropolis-SemiBold.woff2') format('woff2'),
+    url('/fonts/Metropolis/Metropolis-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Metropolis';
-  src: url('/fonts/Metropolis-Bold.woff2') format('woff2'),
-    url('/fonts/Metropolis-Bold.woff') format('woff');
+  src: url('/fonts/Metropolis/Metropolis-Bold.woff2') format('woff2'),
+    url('/fonts/Metropolis/Metropolis-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Metropolis';
+  src: url('/fonts/Metropolis/Metropolis-Medium.woff2') format('woff2'),
+    url('/fonts/Metropolis/Metropolis-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans/OpenSans-Light.woff2') format('woff2'),
+    url('/fonts/OpenSans/OpenSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans/OpenSans-Regular.woff2') format('woff2'),
+    url('/fonts/OpenSans/OpenSans-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans/OpenSans-Bold.woff2') format('woff2'),
+    url('/fonts/OpenSans/OpenSans-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
@@ -25,9 +57,8 @@ html {
 }
 
 body {
-  font-family: Open Sans, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  font-weight: 400;
   line-height: 1.5;
 }
 
@@ -64,8 +95,8 @@ header nav ul {
 }
 
 header nav ul li {
-  margin: 0 18px;
-  font-family: Metropolis, sans-serif;
+  margin: 0 18.2px;
+  font-family: 'Metropolis', sans-serif;
   font-weight: 600;
   font-size: 0.95rem;
 }
@@ -101,25 +132,41 @@ header .toggle {
 
 /* Intro Section */
 .intro {
-  padding: 60px 0;
+  padding: 76px 0 48px 0;
 }
 
 .intro h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
+  font-family: 'Metropolis', sans-serif;
+  font-weight: 700;
+  font-size: 3.5em;
 }
 
 .intro p {
-  font-size: 1.2em;
-  max-width: 800px;
-  margin: 30px 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  margin-top: 5px;
+  max-width: 960px;
 }
 
 .intro button {
-  padding: 10px 20px;
-  font-size: 1em;
-  background-color: white;
-  border: 1px solid black;
+  background: transparent;
+  border: 2px solid #111;
+  border-radius: 0;
+  color: #111;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  height: auto;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 15px 30px;
+  margin-top: 16px;
+  position: relative;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out;
+  z-index: 0;
   cursor: pointer;
 }
 
