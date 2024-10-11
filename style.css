@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
   font-family: 'Metropolis';
   src: url('/fonts/Metropolis/Metropolis-SemiBold.woff2') format('woff2'),
@@ -85,8 +86,9 @@ header .logo {
   width: 300px;
 }
 
-.logo path {
-  fill: #6db33f;
+header .right-section {
+  display: flex;
+  align-items: center;
 }
 
 header nav ul {
@@ -94,14 +96,15 @@ header nav ul {
   list-style: none;
 }
 
-header nav ul li {
-  margin: 0 18.2px;
+.menu-item {
+  position: relative;
+  padding: 0.5rem 2rem 0.5rem 0;
   font-family: 'Metropolis', sans-serif;
   font-weight: 600;
   font-size: 0.95rem;
 }
 
-header nav ul li:after {
+.menu-item:after {
   display: inline-block;
   content: ' ';
   transform: rotate(-45deg);
@@ -112,18 +115,76 @@ header nav ul li:after {
   width: 6px;
   position: relative;
   bottom: 3px;
-  left: 8px;
+  left: 4px;
 }
 
-header nav ul li a {
+.menu-item a {
   text-decoration: none;
   color: #111;
 }
 
-header .right-section {
-  display: flex;
+.submenu {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: calc(100% + 16px);
+  left: -10px;
+  background: white;
+  border: 0;
+  box-shadow: 0 5px 30px 0 rgba(108, 135, 135, 0.5);
+  font-family: Open Sans, sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 6px;
+  transform: translateY(0);
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.submenu li {
+  padding: 0.375rem 3rem 0.375rem 1rem;
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 300;
+  font-size: 1rem;
+  white-space: nowrap;
+  transition: 0.1s;
+}
+
+.submenu li a:hover {
+  color: #6db33f;
+}
+
+.submenu .is-link {
+  color: #086dc3;
+}
+
+.submenu div.navbar-item {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.navbar-item,
+.navbar-link {
   align-items: center;
-  gap: 16px;
+  display: flex;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  margin-left: 0.5rem;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+
+.menu-item:hover .submenu,
+.menu-item .submenu:hover {
+  opacity: 1;
+  visibility: visible;
 }
 
 header .toggle {
