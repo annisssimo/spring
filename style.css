@@ -65,7 +65,7 @@ body {
 
 .container {
   width: 94.4%;
-  max-width: 1400px;
+  max-width: 1344px;
   margin: 0 auto;
 }
 
@@ -272,7 +272,7 @@ header .toggle {
   border: 1px solid #d9e9e9;
   border-radius: 5px;
   height: 194.812px;
-  width: 530.398px;
+  max-width: 530.398px;
   padding: 34px 16px;
   padding-bottom: 3rem;
   transition: all 0.2s;
@@ -311,4 +311,102 @@ header .toggle {
 .project-info p {
   font-size: 1em;
   color: #666;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* Responsive Layout */
+@media (max-width: 1215px) {
+  .projects .project-card {
+    width: 456px;
+    height: 222.016px;
+    padding: 30px 20px;
+  }
+
+  .project-card .image {
+    min-width: 120px;
+    margin-right: 0px;
+  }
+
+  .image img {
+    height: 120px;
+    max-width: 100px;
+    display: block;
+  }
+
+  .project-card {
+    align-items: center;
+  }
+}
+
+@media (max-width: 1215px) {
+  .projects .project-card {
+    width: 372px;
+    height: 276.422px;
+  }
+}
+
+@media (max-width: 1080px) {
+  header {
+    padding: 0;
+  }
+
+  header .container {
+    margin: 0 12px;
+    width: calc(100% - 16px);
+  }
+
+  header .right-section {
+    display: none;
+  }
+
+  header .logo {
+    width: 200px;
+    position: relative;
+    top: 2.5px;
+  }
+
+  .intro p {
+    font-size: 1.3rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    border-bottom: 1px solid #ebf2f2;
+  }
+
+  main {
+    padding-top: 52px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .projects .project-card {
+    width: 345.594px;
+    height: 334.812px;
+    flex-direction: column;
+  }
+
+  .project-card .image {
+    min-width: 120px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+
+  .image img {
+    height: 120px;
+    max-width: 120px;
+    display: block;
+  }
 }
