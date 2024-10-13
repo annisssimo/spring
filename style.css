@@ -260,7 +260,7 @@ header .toggle {
 }
 
 .projects-container {
-  max-width: 82.5%;
+  max-width: 1084.796px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
