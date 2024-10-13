@@ -410,3 +410,14 @@ header .toggle {
     display: block;
   }
 }
+
+@media (max-width: 800px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .projects .project-card {
+    width: 555.148px;
+    height: 307.609px;
+  }
+}
