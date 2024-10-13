@@ -417,8 +417,9 @@ header .toggle {
   }
 
   .projects .project-card {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
+    height: 307.609px;
   }
 }
 
