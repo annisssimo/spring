@@ -272,10 +272,10 @@ header .toggle {
   border: 1px solid #d9e9e9;
   border-radius: 5px;
   height: 194.812px;
-  max-width: 530.398px;
   padding: 34px 16px;
   padding-bottom: 3rem;
   transition: all 0.2s;
+  word-wrap: break-word;
 }
 
 .projects .project-card:hover {
@@ -414,5 +414,17 @@ header .toggle {
 @media (max-width: 800px) {
   .projects-container {
     grid-template-columns: 1fr;
+  }
+
+  .projects .project-card {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects .project-card {
+    width: 100%;
+    padding: 20px 10px;
   }
 }
