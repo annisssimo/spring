@@ -8,193 +8,233 @@
   </head>
   <body>
     <!-- Header Section -->
-    <header>
-      <div class="container">
-        <img src="./images/logo.png" alt="Spring Logo" class="logo" />
-        <div class="hamburger" role="button" tabindex="0">
-          <div class="hamburger-line"></div>
-          <div class="hamburger-line"></div>
-          <div class="hamburger-line"></div>
+    <header class="header">
+      <div class="header__container container">
+        <img src="./images/logo.png" alt="Spring Logo" class="header__logo" />
+        <div class="header__hamburger" role="button" tabindex="0">
+          <div class="header__hamburger-line"></div>
+          <div class="header__hamburger-line"></div>
+          <div class="header__hamburger-line"></div>
         </div>
-        <div class="right-section">
-          <nav>
-            <ul>
-              <li class="menu-item">
+        <div class="header__right-section">
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__menu-item">
                 <a href="#">Why Spring</a>
-                <ul class="submenu">
+                <ul class="header__submenu">
                   <li>
-                    <a class="navbar-item" href="/why-spring">Overview</a>
-                  </li>
-                  <li>
-                    <a class="navbar-item" href="/microservices"
-                      >Microservices</a
-                    >
-                  </li>
-                  <li><a class="navbar-item" href="/reactive">Reactive</a></li>
-                  <li>
-                    <a class="navbar-item" href="/event-driven">Event Driven</a>
-                  </li>
-                  <li><a class="navbar-item" href="/cloud">Cloud</a></li>
-                  <li>
-                    <a class="navbar-item" href="/web-applications"
-                      >Web Applications</a
-                    >
-                  </li>
-                  <li>
-                    <a class="navbar-item" href="/serverless">Serverless</a>
-                  </li>
-                  <li><a class="navbar-item" href="/batch">Batch</a></li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="#">Learn</a>
-                <ul class="submenu">
-                  <li><a class="navbar-item" href="/learn">Overview</a></li>
-                  <li>
-                    <a class="navbar-item" href="/quickstart">Quickstart</a>
-                  </li>
-                  <li><a class="navbar-item" href="/guides">Guides</a></li>
-                  <li><a class="navbar-item" href="/blog">Blog</a></li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="#">Projects</a>
-                <ul class="submenu">
-                  <li>
-                    <a aria-current="page" class="navbar-item" href="/projects"
+                    <a class="header__submenu-item" href="/why-spring"
                       >Overview</a
                     >
                   </li>
                   <li>
-                    <a class="navbar-item" href="/projects/spring-boot"
+                    <a class="header__submenu-item" href="/microservices"
+                      >Microservices</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__submenu-item" href="/reactive"
+                      >Reactive</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__submenu-item" href="/event-driven"
+                      >Event Driven</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__submenu-item" href="/cloud">Cloud</a>
+                  </li>
+                  <li>
+                    <a class="header__submenu-item" href="/web-applications"
+                      >Web Applications</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__submenu-item" href="/serverless"
+                      >Serverless</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__submenu-item" href="/batch">Batch</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__menu-item">
+                <a href="#">Learn</a>
+                <ul class="header__submenu">
+                  <li>
+                    <a class="header__submenu-item" href="/learn">Overview</a>
+                  </li>
+                  <li>
+                    <a class="header__submenu-item" href="/quickstart"
+                      >Quickstart</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__submenu-item" href="/guides">Guides</a>
+                  </li>
+                  <li><a class="header__submenu-item" href="/blog">Blog</a></li>
+                </ul>
+              </li>
+              <li class="header__menu-item">
+                <a href="#">Projects</a>
+                <ul class="header__submenu">
+                  <li>
+                    <a
+                      aria-current="page"
+                      class="header__submenu-item header__submenu-item--link"
+                      href="/projects"
+                      >Overview</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__submenu-item" href="/projects/spring-boot"
                       >Spring Boot</a
                     >
                   </li>
                   <li>
-                    <a class="navbar-item" href="/projects/spring-framework"
+                    <a
+                      class="header__submenu-item"
+                      href="/projects/spring-framework"
                       >Spring Framework</a
                     >
                   </li>
                   <li>
-                    <a class="navbar-item" href="/projects/spring-cloud"
+                    <a
+                      class="header__submenu-item"
+                      href="/projects/spring-cloud"
                       >Spring Cloud</a
                     >
                   </li>
                   <li>
                     <a
-                      class="navbar-item"
+                      class="header__submenu-item"
                       href="/projects/spring-cloud-dataflow"
                       >Spring Cloud Data Flow</a
                     >
                   </li>
                   <li>
-                    <a class="navbar-item" href="/projects/spring-data"
+                    <a class="header__submenu-item" href="/projects/spring-data"
                       >Spring Data</a
                     >
                   </li>
                   <li>
-                    <a class="navbar-item" href="/projects/spring-integration"
+                    <a
+                      class="header__submenu-item"
+                      href="/projects/spring-integration"
                       >Spring Integration</a
                     >
                   </li>
                   <li>
-                    <a class="navbar-item" href="/projects/spring-batch"
+                    <a
+                      class="header__submenu-item"
+                      href="/projects/spring-batch"
                       >Spring Batch</a
                     >
                   </li>
                   <li>
-                    <a class="navbar-item" href="/projects/spring-security"
+                    <a
+                      class="header__submenu-item"
+                      href="/projects/spring-security"
                       >Spring Security</a
                     >
                   </li>
                   <li>
-                    <a class="navbar-item" href="/projects/spring-ai"
+                    <a class="header__submenu-item" href="/projects/spring-ai"
                       >Spring AI</a
                     >
                   </li>
                   <li>
                     <a
-                      aria-current="page"
-                      class="navbar-item is-link mb-5"
+                      class="header__submenu-item header__submenu-item--link"
                       href="/projects"
                       >View all projects</a
                     >
                   </li>
-                  <li><div class="navbar-item">DEVELOPMENT TOOLS</div></li>
                   <li>
-                    <a class="navbar-item" href="/tools">Spring Tools 4</a>
+                    <div class="header__submenu-item">DEVELOPMENT TOOLS</div>
+                  </li>
+                  <li>
+                    <a class="header__submenu-item" href="/tools"
+                      >Spring Tools 4</a
+                    >
                   </li>
                   <li>
                     <a
-                      aria-label="Spring Initializr, Open in a new tab"
                       href="https://start.spring.io/"
-                      class="navbar-item"
-                      >Spring Initializer<svg
-                        aria-hidden="true"
-                        focusable="false"
-                        data-prefix="fas"
-                        data-icon="arrow-up-right-from-square"
-                        class="svg-inline--fa fa-arrow-up-right-from-square navbar-icon ml-2"
-                        role="img"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
-                      >
-                        <path
-                          fill="currentColor"
-                          d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
-                        ></path>
-                      </svg>
-                    </a>
+                      class="header__submenu-item"
+                      aria-label="Spring Initializr, Open in a new tab"
+                      >Spring Initializer</a
+                    >
                   </li>
                 </ul>
               </li>
-              <li class="menu-item">
+              <li class="header__menu-item">
                 <a href="#">Academy</a>
-                <ul class="submenu">
+                <ul class="header__submenu">
                   <li>
-                    <a href="https://spring.academy/courses" class="navbar-item"
+                    <a
+                      href="https://spring.academy/courses"
+                      class="header__submenu-item"
                       >Courses</a
                     >
                   </li>
                   <li>
                     <a
                       href="https://spring.academy/learning-path"
-                      class="navbar-item"
+                      class="header__submenu-item"
                       >Get Certified</a
                     >
                   </li>
                 </ul>
               </li>
-              <li class="menu-item">
+              <li class="header__menu-item">
                 <a href="#">Solutions</a>
-                <ul class="submenu">
-                  <li><a class="navbar-item" href="/solutions">Overview</a></li>
+                <ul class="header__submenu">
                   <li>
-                    <a class="navbar-item" href="/support">Tanzu Spring</a>
+                    <a class="header__submenu-item" href="/solutions"
+                      >Overview</a
+                    >
                   </li>
                   <li>
-                    <a class="navbar-item" href="/consulting"
+                    <a class="header__submenu-item" href="/support"
+                      >Tanzu Spring</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__submenu-item" href="/consulting"
                       >Spring Consulting</a
                     >
                   </li>
                   <li>
-                    <a class="navbar-item" href="https://spring.academy/teams"
+                    <a
+                      class="header__submenu-item"
+                      href="https://spring.academy/teams"
                       >Spring Academy For Teams</a
                     >
                   </li>
                   <li>
-                    <a class="navbar-item" href="/security"
+                    <a class="header__submenu-item" href="/security"
                       >Security Advisories</a
                     >
                   </li>
                 </ul>
               </li>
-              <li class="menu-item">
+              <li class="header__menu-item">
                 <a href="#">Community</a>
-                <ul class="submenu">
-                  <li><a class="navbar-item" href="/community">Overview</a></li>
-                  <li><a class="navbar-item" href="/events">Events</a></li>
-                  <li><a class="navbar-item" href="/authors">Authors</a></li>
+                <ul class="header__submenu">
+                  <li>
+                    <a class="header__submenu-item" href="/community"
+                      >Overview</a
+                    >
+                  </li>
+                  <li>
+                    <a class="header__submenu-item" href="/events">Events</a>
+                  </li>
+                  <li>
+                    <a class="header__submenu-item" href="/authors">Authors</a>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -202,7 +242,7 @@
           <img
             src="./images/toggle.png"
             alt="Toggle"
-            class="toggle"
+            class="header__toggle"
             draggable="false"
           />
         </div>
@@ -212,110 +252,78 @@
     <!-- Main Section -->
     <main>
       <section class="intro">
-        <div class="container">
-          <h1>Projects</h1>
-          <p>
+        <div class="intro__container container">
+          <h1 class="intro__title">Projects</h1>
+          <p class="intro__description">
             From configuration to security, web apps to big data—whatever the
             infrastructure needs of your application may be, there is a Spring
             Project to help you build it. Start small and use just what you
             need—Spring is modular by design.
           </p>
-          <button class="intro-button">Release Calendar</button>
+          <button class="intro__button">Release Calendar</button>
         </div>
       </section>
 
       <!-- Projects Grid Section -->
       <section class="projects">
-        <div class="projects-container">
-          <div class="project-card">
-            <div class="image">
+        <div class="projects__container">
+          <div class="projects__card">
+            <div class="projects__image">
               <img
                 src="https://spring.io/img/projects/spring-boot.svg"
                 alt="Spring Boot"
               />
             </div>
-            <div class="project-info">
-              <h3>Spring Boot</h3>
-              <p>
+            <div class="projects__info">
+              <h3 class="projects__title">Spring Boot</h3>
+              <p class="projects__description">
                 Takes an opinionated view of building Spring applications and
                 gets you up and running as quickly as possible.
               </p>
             </div>
           </div>
-          <div class="project-card">
-            <div class="image">
+          <div class="projects__card">
+            <div class="projects__image">
               <img
                 src="https://spring.io/img/projects/spring-framework.svg?v=2"
                 alt="Spring Framework"
               />
             </div>
-            <div class="project-info">
-              <h3>Spring Framework</h3>
-              <p>
+            <div class="projects__info">
+              <h3 class="projects__title">Spring Framework</h3>
+              <p class="projects__description">
                 Provides core support for dependency injection, transaction
                 management, web apps, data access, messaging, and more.
               </p>
             </div>
           </div>
-          <div class="project-card">
-            <div class="image">
+          <div class="projects__card">
+            <div class="projects__image">
               <img
                 src="https://spring.io/img/projects/spring-data.svg"
                 alt="Spring Data"
               />
             </div>
-            <div class="project-info">
-              <h3>Spring Data</h3>
-              <p>
+            <div class="projects__info">
+              <h3 class="projects__title">Spring Data</h3>
+              <p class="projects__description">
                 Provides a consistent approach to data access – relational,
                 non-relational, map-reduce, and beyond.
               </p>
             </div>
           </div>
-          <div class="project-card">
-            <div class="image">
+          <div class="projects__card">
+            <div class="projects__image">
               <img
                 src="https://spring.io/img/projects/spring-cloud.svg"
                 alt="Spring Cloud"
               />
             </div>
-            <div class="project-info">
-              <h3>Spring Cloud</h3>
-              <p>
+            <div class="projects__info">
+              <h3 class="projects__title">Spring Cloud</h3>
+              <p class="projects__description">
                 Provides a set of tools for common patterns in distributed
-                systems. Useful for building and deploying microservices.
-              </p>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="image">
-              <img
-                src="https://spring.io/img/projects/spring-data-flow.svg"
-                alt="Spring Cloud Data Flow"
-              />
-            </div>
-            <div class="project-info">
-              <h3>Spring Cloud Data Flow</h3>
-              <p>
-                Provides an orchestration service for composable data
-                microservice applications on modern runtimes.
-              </p>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="image">
-              <img
-                src="https://spring.io/img/projects/spring-security.svg"
-                alt="Spring Security"
-              />
-            </div>
-            <div class="project-info">
-              <h3>Spring Security</h3>
-              <p>
-                Protects your application with comprehensive and extensible
-                authentication and authorization support.
+                systems.
               </p>
             </div>
           </div>
