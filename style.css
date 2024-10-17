@@ -210,7 +210,7 @@ header .toggle {
   max-width: 960px;
 }
 
-.intro button {
+.intro-button {
   background: transparent;
   border: 2px solid #111;
   border-radius: 0;
@@ -372,8 +372,38 @@ header .toggle {
     font-size: 1.3rem;
   }
 
+  /* Hamburger Styles */
   .hamburger {
     display: block;
+    cursor: pointer;
+    height: 48px;
+    position: relative;
+    transition: 0.4s cubic-bezier(0, 0, 0, 1);
+    user-select: none;
+    width: 48px;
+    outline: none;
+    transform: none;
+  }
+
+  .hamburger-line {
+    background: currentcolor;
+    height: 2px;
+    position: absolute;
+    width: 24px;
+    left: 12px;
+    transition: 0.4s cubic-bezier(0, 0, 0, 1);
+  }
+
+  .hamburger-line:nth-child(1) {
+    top: 16px;
+  }
+
+  .hamburger-line:nth-child(2) {
+    top: 23px;
+  }
+
+  .hamburger-line:nth-child(3) {
+    top: 30px;
   }
 
   header {
