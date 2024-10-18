@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spring | Projects Clone</title>
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <script src="../src/js/app.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="header__container container">
+        <img src="./images/logo.png" alt="Spring Logo" class="header__logo" />
+        <div class="header__hamburger" role="button" tabindex="0">
+          <div class="header__hamburger-line"></div>
+          <div class="header__hamburger-line"></div>
+          <div class="header__hamburger-line"></div>
+        </div>
+        <div class="header__right-section">
+          <nav class="header__nav">
+            <ul class="header__menu" id="menu"></ul>
+          </nav>
+          <img
+            src="./images/toggle.png"
+            alt="Toggle"
+            class="header__toggle"
+            draggable="false"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+      <section class="intro">
+        <div class="intro__container container">
+          <h1 class="intro__title">Projects</h1>
+          <p class="intro__description">
+            From configuration to security, web apps to big data—whatever the
+            infrastructure needs of your application may be, there is a Spring
+            Project to help you build it. Start small and use just what you
+            need—Spring is modular by design.
+          </p>
+          <button class="intro__button">Release Calendar</button>
+        </div>
+      </section>
+
+      <!-- Projects Grid Section -->
+      <section class="projects">
+        <div class="projects__container">
+          <div class="projects__card">
+            <div class="projects__image">
+              <img
+                src="https://spring.io/img/projects/spring-boot.svg"
+                alt="Spring Boot"
+              />
+            </div>
+            <div class="projects__info">
+              <h3 class="projects__title">Spring Boot</h3>
+              <p class="projects__description">
+                Takes an opinionated view of building Spring applications and
+                gets you up and running as quickly as possible.
+              </p>
+            </div>
+          </div>
+          <div class="projects__card">
+            <div class="projects__image">
+              <img
+                src="https://spring.io/img/projects/spring-framework.svg?v=2"
+                alt="Spring Framework"
+              />
+            </div>
+            <div class="projects__info">
+              <h3 class="projects__title">Spring Framework</h3>
+              <p class="projects__description">
+                Provides core support for dependency injection, transaction
+                management, web apps, data access, messaging, and more.
+              </p>
+            </div>
+          </div>
+          <div class="projects__card">
+            <div class="projects__image">
+              <img
+                src="https://spring.io/img/projects/spring-data.svg"
+                alt="Spring Data"
+              />
+            </div>
+            <div class="projects__info">
+              <h3 class="projects__title">Spring Data</h3>
+              <p class="projects__description">
+                Provides a consistent approach to data access – relational,
+                non-relational, map-reduce, and beyond.
+              </p>
+            </div>
+          </div>
+          <div class="projects__card">
+            <div class="projects__image">
+              <img
+                src="https://spring.io/img/projects/spring-cloud.svg"
+                alt="Spring Cloud"
+              />
+            </div>
+            <div class="projects__info">
+              <h3 class="projects__title">Spring Cloud</h3>
+              <p class="projects__description">
+                Provides a set of tools for common patterns in distributed
+                systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
