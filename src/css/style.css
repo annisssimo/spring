@@ -1,48 +1,51 @@
 /* Fonts */
 @font-face {
   font-family: 'Metropolis';
-  src: url('/fonts/Metropolis/Metropolis-SemiBold.woff2') format('woff2'),
-    url('/fonts/Metropolis/Metropolis-SemiBold.woff') format('woff');
+  src: url('../../public/fonts/Metropolis/Metropolis-SemiBold.woff2')
+      format('woff2'),
+    url('../../public/fonts/Metropolis/Metropolis-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Metropolis';
-  src: url('/fonts/Metropolis/Metropolis-Bold.woff2') format('woff2'),
-    url('/fonts/Metropolis/Metropolis-Bold.woff') format('woff');
+  src: url('../../public/fonts/Metropolis/Metropolis-Bold.woff2')
+      format('woff2'),
+    url('../../public/fonts/Metropolis/Metropolis-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Metropolis';
-  src: url('/fonts/Metropolis/Metropolis-Medium.woff2') format('woff2'),
-    url('/fonts/Metropolis/Metropolis-Medium.woff') format('woff');
+  src: url('../../public/fonts/Metropolis/Metropolis-Medium.woff2')
+      format('woff2'),
+    url('../../public/fonts/Metropolis/Metropolis-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('/fonts/OpenSans/OpenSans-Light.woff2') format('woff2'),
-    url('/fonts/OpenSans/OpenSans-Light.woff') format('woff');
+  src: url('../../public/fonts/OpenSans/OpenSans-Light.woff2') format('woff2'),
+    url('../../public/fonts/OpenSans/OpenSans-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('/fonts/OpenSans/OpenSans-Regular.woff2') format('woff2'),
-    url('/fonts/OpenSans/OpenSans-Regular.woff') format('woff');
+  src: url('../../public/fonts/OpenSans/OpenSans-Regular.woff2') format('woff2'),
+    url('../../public/fonts/OpenSans/OpenSans-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('/fonts/OpenSans/OpenSans-Bold.woff2') format('woff2'),
-    url('/fonts/OpenSans/OpenSans-Bold.woff') format('woff');
+  src: url('../../public/fonts/OpenSans/OpenSans-Bold.woff2') format('woff2'),
+    url('../../public/fonts/OpenSans/OpenSans-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 }
@@ -253,7 +256,7 @@ body {
   gap: 24px;
 }
 
-.projects__card {
+.projects-card {
   display: flex;
   background: white;
   border: 1px solid #d9e9e9;
@@ -265,7 +268,7 @@ body {
   word-wrap: break-word;
 }
 
-.projects__card:hover {
+.projects-card:hover {
   box-shadow: 0 10px 20px 0 rgba(108, 135, 135, 0.2);
   text-decoration: none;
   top: -3px;
@@ -273,7 +276,7 @@ body {
   cursor: pointer;
 }
 
-.projects__card .projects__image {
+.projects-card .project-card__image {
   min-width: 120px;
   padding-right: 20px;
   margin-right: 20px;
@@ -282,7 +285,7 @@ body {
   left: 3px;
 }
 
-.projects__image img {
+.project-card__image img {
   height: 120px;
   max-width: 120px;
   display: block;
@@ -295,7 +298,7 @@ body {
   margin-bottom: 10px;
 }
 
-.projects__description {
+.project-card__info {
   font-size: 1em;
   color: #666;
 }
@@ -306,30 +309,30 @@ body {
 
 /* Responsive Layout */
 @media (max-width: 1215px) {
-  .projects .projects__card {
+  .projects .projects-card {
     width: 456px;
     height: 222.016px;
     padding: 30px 20px;
   }
 
-  .projects__card .image {
+  .projects-card .image {
     min-width: 120px;
     margin-right: 0px;
   }
 
-  .projects__image img {
+  .project-card__image img {
     height: 120px;
     max-width: 100px;
     display: block;
   }
 
-  .projects__card {
+  .projects-card {
     align-items: center;
   }
 }
 
 @media (max-width: 1215px) {
-  .projects .projects__card {
+  .projects .projects-card {
     width: 372px;
     height: 276.422px;
   }
@@ -406,19 +409,19 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .projects .projects__card {
+  .projects .projects-card {
     width: 345.594px;
     height: 334.812px;
     flex-direction: column;
   }
 
-  .projects__card .projects__image {
+  .projects-card .project-card__image {
     min-width: 120px;
     margin-bottom: 20px;
     margin-right: 0px;
   }
 
-  .projects__image img {
+  .project-card__image img {
     height: 120px;
     max-width: 120px;
     display: block;
@@ -430,7 +433,7 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .projects .projects__card {
+  .projects .projects-card {
     width: 90%;
     margin: 0 auto;
     height: 307.609px;
@@ -438,7 +441,7 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  .projects .projects__card {
+  .projects .projects-card {
     width: 100%;
     padding: 20px 10px;
   }
