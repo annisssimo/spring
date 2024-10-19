@@ -25,7 +25,7 @@ export const projects = [
   },
 ];
 
-export function generateProjects(projects) {
+export function generateProjects() {
   const projectsContainer = document.querySelector('.projects__container');
 
   projects.forEach((proj) => {

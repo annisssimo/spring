@@ -73,7 +73,7 @@ export const menuItems = [
   },
 ];
 
-export function generateMenu(menuItems) {
+export function generateMenu() {
   const menu = document.querySelector('#menu');
 
   menuItems.forEach((item) => {

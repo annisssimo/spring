@@ -1,7 +1,7 @@
 import { generateMenu } from './menu.js';
-import { menuItems } from './menu.js';
-import { projects } from './projects.js';
 import { generateProjects } from './projects.js';
+import { generateMobileMenu } from './mobileMenu.js';
 
-generateMenu(menuItems);
-generateProjects(projects);
+generateMenu();
+generateProjects();
+generateMobileMenu();
