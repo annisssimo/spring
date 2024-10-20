@@ -1,4 +1,4 @@
-import { menuItems } from './menu.js';
+import { menuItems } from '../data/menuItems.js';
 
 export function generateMobileMenu() {
   const menuList = document.querySelector('#mobile-menu');
