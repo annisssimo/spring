@@ -367,15 +367,19 @@ body {
 }
 
 .mobile-menu__item {
-  font-size: 2rem;
   color: white;
   cursor: pointer;
-  border-bottom: 1px solid hsla(0, 0%, 100%, 0.4);
-  height: 60px;
   position: relative;
   font-weight: 400;
-  margin: 1rem 0;
   list-style-type: none;
+}
+
+.mobile-menu__title {
+  display: block;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.4);
+  margin: 1rem 0;
+  font-size: 2rem;
+  height: 60px;
 }
 
 .mobile-menu__item::after {
@@ -398,26 +402,26 @@ body {
 }
 
 .submenu {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  padding-left: 20px;
+  display: none;
+  list-style: none;
+  box-sizing: inherit;
 }
 
-.submenu a {
-  display: block;
+.submenu__item a {
   font-size: 1rem;
-  color: #ccc;
+  color: #98afae;
   text-decoration: none;
-  padding: 5px 0;
+  padding: 3.2px 0;
+  font-size: 1.2rem;
+  display: block;
 }
 
-.submenu a:hover {
+.submenu__item a:hover {
   color: #9fc937;
 }
 
 .submenu--active {
-  max-height: 1000px;
+  display: block;
 }
 
 /* Responsive Layout */

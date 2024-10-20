@@ -6,7 +6,9 @@ export function generateMobileMenu() {
   menuItems.forEach((item) => {
     const listItem = document.createElement('li');
     listItem.classList.add('mobile-menu__item');
-    listItem.textContent = item.title;
+    const listItemTitle = document.createElement('span');
+    listItemTitle.classList.add('mobile-menu__title');
+    listItemTitle.textContent = item.title;
 
     const subMenu = document.createElement('ul');
     subMenu.classList.add('submenu');
@@ -17,14 +19,29 @@ export function generateMobileMenu() {
 
       const subAnchor = document.createElement('a');
       subAnchor.textContent = sub.title;
-      subAnchor.href = sub.href;
 
-      subListItem.appendChild(subAnchor);
-      subMenu.appendChild(subListItem);
+      subListItem.append(subAnchor);
+      subMenu.append(subListItem);
     });
 
-    listItem.appendChild(subMenu);
-    menuList.appendChild(listItem);
+    listItem.append(listItemTitle, subMenu);
+    menuList.append(listItem);
+  });
+
+  menuList.addEventListener('click', (event) => {
+    const target = event.target.closest('.mobile-menu__item');
+    if (target) {
+      const submenu = target.querySelector('.submenu');
+      const isOpen = submenu.classList.contains('submenu--active');
+
+      document.querySelectorAll('.submenu').forEach((sub) => {
+        sub.classList.remove('submenu--active');
+      });
+
+      if (!isOpen) {
+        submenu.classList.add('submenu--active');
+      }
+    }
   });
 }
 
@@ -34,25 +51,4 @@ const mobileNav = document.querySelector('.mobile-menu');
 hamburger.addEventListener('click', () => {
   mobileNav.classList.toggle('mobile-menu--active');
   hamburger.classList.toggle('hamburger--active');
-});
-
-const menuItemTitles = document.querySelectorAll('.mobile-menu__item');
-
-menuItemTitles.forEach((item) => {
-  item.addEventListener('click', () => {
-    const submenu = item.querySelector('.submenu');
-    const isOpen = submenu.classList.contains('submenu--active');
-
-    document
-      .querySelectorAll('.submenu')
-      .forEach((sub) => sub.classList.remove('submenu--active'));
-    document
-      .querySelectorAll('.mobile-menu__item')
-      .forEach((title) => title.classList.remove('submenu--active'));
-
-    if (!isOpen) {
-      submenu.classList.add('submenu--active');
-      item.classList.add('submenu--active');
-    }
-  });
 });
