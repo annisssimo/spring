@@ -1,6 +1,5 @@
 import { projects } from '../data/projects.js';
 
-let debounceTimer;
 const searchInput = document.getElementById('projects-search');
 const projectsContainer = document.querySelector('.projects__container');
 const noResults = document.getElementById('no-results');
@@ -44,6 +43,7 @@ export function generateProjects(filteredProjects = projects) {
 }
 
 function debounce(func, delay) {
+  let debounceTimer;
   return function (...args) {
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => func.apply(this, args), delay);
