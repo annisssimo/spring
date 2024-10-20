@@ -305,6 +305,7 @@ body {
 
 /* Hamburger Styles */
 .hamburger {
+  display: none;
   cursor: pointer;
   height: 48px;
   position: relative;
