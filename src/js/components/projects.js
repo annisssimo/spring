@@ -1,5 +1,6 @@
 import { projects } from '../data/projects.js';
 
+let debounceTimer;
 const searchInput = document.getElementById('projects-search');
 const projectsContainer = document.querySelector('.projects__container');
 const noResults = document.getElementById('no-results');
@@ -42,6 +43,13 @@ export function generateProjects(filteredProjects = projects) {
   }
 }
 
+function debounce(func, delay) {
+  return function (...args) {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => func.apply(this, args), delay);
+  };
+}
+
 function filterProjects() {
   const query = searchInput.value.toLowerCase();
   const filteredProjects = projects.filter(
@@ -52,4 +60,4 @@ function filterProjects() {
   generateProjects(filteredProjects);
 }
 
-searchInput.addEventListener('input', filterProjects);
+searchInput.addEventListener('input', debounce(filterProjects, 300));
