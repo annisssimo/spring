@@ -30,6 +30,7 @@ export function generateMobileMenu() {
 
   menuList.addEventListener('click', (event) => {
     const target = event.target.closest('.mobile-menu__item');
+
     if (target) {
       const submenu = target.querySelector('.submenu');
       const isOpen = submenu.classList.contains('submenu--active');
