@@ -351,6 +351,8 @@ body {
   transform: rotate(45deg) translate(-4.93px, -4.93px);
 }
 
+/* Mobile Menu */
+
 .mobile-menu {
   position: fixed;
   top: -100%;
@@ -364,6 +366,11 @@ body {
   overflow-y: auto;
   display: none;
   transition: top 5s ease;
+}
+
+.mobile-menu--active {
+  display: block;
+  top: 0;
 }
 
 .mobile-menu__item {
@@ -395,6 +402,10 @@ body {
   width: 15px;
   box-sizing: inherit;
   transform: rotate(45deg) translate(-5px, 5px) scale(1);
+}
+
+.mobile-menu__item--active::after {
+  transform: rotate(45deg) translate(5px, 15px) scale(-1);
 }
 
 .mobile-menu__item:hover {
@@ -485,11 +496,6 @@ body {
 
   main {
     padding-top: 52px;
-  }
-
-  .mobile-menu--active {
-    display: block;
-    top: 0;
   }
 }
 

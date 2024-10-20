@@ -37,10 +37,12 @@ export function generateMobileMenu() {
 
       document.querySelectorAll('.submenu').forEach((sub) => {
         sub.classList.remove('submenu--active');
+        target.classList.remove('mobile-menu__item--active');
       });
 
       if (!isOpen) {
         submenu.classList.add('submenu--active');
+        target.classList.add('mobile-menu__item--active');
       }
     }
   });
