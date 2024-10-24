@@ -552,9 +552,22 @@ body {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 590px) {
+  .input-search input {
+    display: block;
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
   .projects .projects-card {
     width: 100%;
     padding: 20px 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .input-search input {
+    width: 200px;
   }
 }
