@@ -35,9 +35,9 @@ export function generateMobileMenu() {
       const submenu = target.querySelector('.submenu');
       const isOpen = submenu.classList.contains('submenu--active');
 
-      document.querySelectorAll('.submenu').forEach((sub) => {
-        sub.classList.remove('submenu--active');
-        target.classList.remove('mobile-menu__item--active');
+      document.querySelectorAll('.mobile-menu__item').forEach((item) => {
+        item.querySelector('.submenu').classList.remove('submenu--active');
+        item.classList.remove('mobile-menu__item--active');
       });
 
       if (!isOpen) {
